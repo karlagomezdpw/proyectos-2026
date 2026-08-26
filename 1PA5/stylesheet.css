@@ -1,0 +1,123 @@
+@property --arena {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f4ede4
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:Verdana, Geneva, Tahoma, sans-serif
+"
+}
+nav{
+    background-color: var(--arena);
+    padding: 30px;
+    text-align:center;
+
+}
+.navbar-item {
+    color: black;
+    text-decoration: none;
+    margin-right:50px;
+
+}
+
+.navbar-item:hover {
+    color:darkred;
+}
+
+header {
+    background-image:url("images/café.jpg");
+    background-size: cover;
+    background-position: center;
+    color:white;
+}
+
+h1{
+    color:brown;
+}
+header>div {
+    padding: 300px 300px 300px 100px;
+}
+.button {
+    padding: 10px;
+    background-color:brown; 
+    color:whitesmoke;
+    display: inline-block;
+    margin: 15px 0 15px;
+}
+.button:hover {
+    background-color: whitesmoke;
+    color:saddlebrown;
+    cursor: pointer
+}
+
+#section1 {
+    background-color: #f4ede4;
+
+}
+#img-lugar {
+    height: 750px;
+}
+section,footer{
+    padding:20px;
+}
+
+h2{
+    font-size:48px;
+    line-height: 100px;
+    color:brown;
+}
+
+#section1 p{
+    width: 50%;
+}
+
+#sct1-text{
+    padding-left:100px;
+}
+#section2 {
+    text-align:center;
+}
+#section2 table{
+    margin:auto;
+    margin-top:25px;
+    border-collapse:collapse;
+}
+#section2 td, th {
+    padding:10px;
+}
+
+#section2 th {
+    background-color:#f4ede4;
+    color:brown;
+}
+
+#section2 td{
+    border-bottom: 1px dotted
+}
+
+footer {
+    background-color:rgb(127, 69, 69);
+    color:aliceblue;
+}
+footer table {
+    width: 100%;
+}
+#contacto{
+    text-align:right;
+}
+
+.redes img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.redes {
+ margin: 8px 0;
+}
+    
