@@ -1,0 +1,64 @@
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #FFF4D6;
+
+}
+
+section {
+
+    margin: 40px;
+
+}
+
+
+h1 {
+
+    color: #5C3A21;
+
+}
+
+#contenedor {
+    border: 2px solid black;
+
+    width: 600px;
+    height: 400px;
+
+    background-image: url("images/cesped.avif");
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.caja1 {
+    position: absolute;
+    top: 130px;
+    left: 180px;
+}
+
+.caja1 img {
+    width: 300px;
+}
+
+.caja2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.caja2 img {
+    width: 200px;
+}
+
+.caja3 {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+}
+
+.caja3 img {
+    width: 230px;
+}
