@@ -1,0 +1,262 @@
+/*ESTILO GENERAL*/
+.container {
+   display: flex;
+
+}
+
+.container div {
+ border: 3px solid rgb(103, 58, 176);
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    background-color: rgb(182, 125, 185);
+
+}
+
+
+/* 1. FLEX-DIRECTION: COLUMN*/
+
+/*
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);;
+}
+*/
+
+
+/* 2. FLEX-DIRECTION: ROW-REVERSE */
+
+/*
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);
+}
+*/
+
+/*3. FLEX-WRAP: WRAP*/
+
+/*
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);
+}
+*/
+
+
+/* 4. JUSTIFY-CONTENT: SPACE-BETWEEN*/
+
+/*
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);
+}
+*/
+
+
+/* 5. JUSTIFY-CONTENT: CENTER */
+
+/*
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);
+
+}
+*/
+
+
+/* 6. ALIGN-ITEMS: FLEX-END */
+
+/*
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 400px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);
+}
+*/
+
+
+/* 7. ALIGN-CONTENT: SPACE-AROUND*/
+
+/*
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    align-content: space-around;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185); 
+}
+*/
+
+
+/* 8. ORDER*/
+
+/*
+.container {
+    display: flex;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);
+}
+
+
+.container div:nth-child(1) {
+    order: 7;
+}
+
+.container div:nth-child(2) {
+    order: 6;
+}
+
+.container div:nth-child(3) {
+    order: 5;
+}
+
+.container div:nth-child(4) {
+    order: 4;
+}
+
+.container div:nth-child(5) {
+    order: 3;
+}
+
+.container div:nth-child(6) {
+    order: 2;
+}
+
+.container div:nth-child(7) {
+    order: 1;
+}
+*/
+
+
+/* 9. FLEX-GROW*/
+
+/*
+.container {
+    display: flex;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);
+}
+
+.container div:nth-child(1) {
+    flex-grow: 1;
+}
+
+.container div:nth-child(2) {
+    flex-grow: 2;
+}
+
+.container div:nth-child(3) {
+    flex-grow: 3;
+}
+
+.container div:nth-child(4) {
+    flex-grow: 4;
+}
+
+.container div:nth-child(5) {
+    flex-grow: 5;
+}
+
+.container div:nth-child(6) {
+    flex-grow: 6;
+}
+
+.container div:nth-child(7) {
+    flex-grow: 7;
+}
+*/
+
+
+/* 10. ALIGN-SELF */
+
+.container {
+    display: flex;
+    height: 400px;
+}
+
+.container div {
+    border: 3px solid rgb(103, 58, 176);
+    height: 80px;
+    text-align: center;
+    background-color: #rgb(182, 125, 185);
+}
+
+.container div:nth-child(4) {
+    align-self: flex-end;
+}
