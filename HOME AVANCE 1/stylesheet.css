@@ -1,0 +1,97 @@
+@property --arena {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f4ede4
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:Verdana, Geneva, Tahoma, sans-serif
+"
+}
+nav {
+    background-color: var(--arena);
+    height: 90px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu img {
+    width: 28px;
+    height: 28px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconos img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+header {
+    background-image: url("images/Pelotas home.png");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    color: white;
+}
+
+h1{ 
+    color:rgb(247, 247, 247);
+      font-family: "Cormorant Garamond", serif;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+}
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 82px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+    margin-top: 5px;
+}
+header>div {
+    padding: 200px 200px 200px 100px;
+}
+.button {
+    padding: 10px 30px;
+    background-color:sienna;
+    color:whitesmoke;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 15px 0 15px;
+    font-size: 22px;
+}
+.button:hover {
+    background-color:rgb(168, 104, 74);
+    color:rgb(44, 35, 30);
+    cursor: pointer
+}
+
