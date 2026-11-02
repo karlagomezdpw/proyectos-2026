@@ -1,0 +1,283 @@
+@property --arena {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f4ede4
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+nav {
+    background-color: var(--arena);
+    height: 90px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu img {
+    width: 28px;
+    height: 28px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconos img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+header {
+    background-image: url("images/Pelotas home.png");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    color: white;
+}
+
+h1{ 
+    color:rgb(247, 247, 247);
+      font-family: "Cormorant Garamond", serif;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+}
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 82px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+    margin-top: 5px;
+}
+header>div {
+    padding: 200px 200px 200px 100px;
+}
+.button {
+    padding: 10px 30px;
+    background-color:sienna;
+    color:whitesmoke;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 15px 0 15px;
+    font-size: 22px;
+}
+.button:hover {
+    background-color:rgb(168, 104, 74);
+    color:rgb(44, 35, 30);
+    cursor: pointer
+}
+
+
+/* ESTILOS GENERALES */
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+section {
+    width: 100%;
+}
+
+/* CATEGORÍAS */
+
+.categorias {
+    padding: 60px 7%;
+}
+
+.categorias h2 {
+    color: #81845a;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.categorias-contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.categoria {
+    width: 30%;
+    text-align: center;
+}
+
+.categoria img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.categoria a {
+    color: black;
+    text-decoration: none;
+}
+
+.categoria p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* PRODUCTOS DESTACADOS */
+
+.productos {
+    padding: 50px 7%;
+}
+
+.productos-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.productos-titulo h2 {
+    color: #81845a;
+    font-size: 30px;
+}
+
+.productos-titulo a {
+    color: black;
+    text-decoration: none;
+}
+
+.productos-contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.producto {
+    width: 30%;
+}
+
+.producto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.producto p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.puntos {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+/* SOBRE STRATENNIS */
+
+.nosotros {
+    background-color: #f4ede4;
+    padding: 70px 7%;
+}
+
+.nosotros h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.nosotros p {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.boton-secundario {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #81845a;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+/* SUSCRIPCIÓN */
+
+.suscripcion {
+    padding: 60px 7%;
+}
+
+.suscripcion h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.correo {
+    display: flex;
+    max-width: 500px;
+    border: 1px solid #999;
+}
+
+.correo input {
+    padding: 15px;
+    border: none;
+    flex: 1;
+    min-width: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.correo button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #81845a;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #f4ede4;
+    padding: 35px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+}
