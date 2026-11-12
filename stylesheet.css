@@ -1,0 +1,819 @@
+/* ESTILOS GENERALES */
+
+.home,
+.home * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    font-family: "DM Sans", Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.home a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.home img {
+    display: block;
+    max-width: 100%;
+}
+
+.home section {
+    width: 100%;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.home .barra {
+    position: relative;
+    z-index: 10;
+
+    width: 100%;
+    min-height: 90px;
+    padding: 10px 5%;
+
+    background-color: #f4ede4;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SECCIONES EN ESCRITORIO */
+
+.home .secciones {
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.home .secciones > a,
+.home .tienda > summary {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home .secciones a:hover,
+.home .tienda summary:hover {
+    color: sienna;
+}
+
+/* MENÚ DESPLEGABLE DE TIENDA */
+
+.home .tienda {
+    position: relative;
+}
+
+.home .tienda summary,
+.home .menu > summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.home .tienda summary::-webkit-details-marker,
+.home .menu > summary::-webkit-details-marker {
+    display: none;
+}
+
+.home .opciones-tienda {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 170px;
+    padding: 10px;
+
+    background-color: #f4ede4;
+    border: 1px solid #ddd;
+}
+
+.home .opciones-tienda a {
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+.home .opciones-tienda a:hover {
+    background-color: white;
+    color: sienna;
+}
+
+/* MENÚ MÓVIL: OCULTO EN ESCRITORIO */
+
+.home .menu {
+    display: none;
+}
+
+/* LOGO CENTRADO */
+
+
+.home .logo {
+    width: 20%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .logo a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .logo img {
+    max-width: 200%;
+    max-height: 200%;
+}
+
+/* ICONOS */
+
+.home .iconos {
+    width: 40%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.home .iconos a {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .iconos img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* PORTADA */
+
+.home .portada {
+    min-height: 700px;
+    padding: 80px 7%;
+
+    background-image: url("images/Pelotas home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+.home .contenido-portada {
+    width: 100%;
+    max-width: 850px;
+}
+
+.home .portada h1 {
+    margin-bottom: 12px;
+
+    font-family: "DM sans", serif;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.home .texto-header {
+    margin-bottom: 25px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 86px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+.home .button {
+    display: inline-block;
+    padding: 12px 30px;
+
+    background-color: sienna;
+    color: whitesmoke;
+    border-radius: 15px;
+
+    font-size: 22px;
+}
+
+.home .button:hover {
+    background-color: rgb(168, 104, 74);
+    cursor: pointer;
+}
+
+/* CATEGORÍAS */
+/* EXPLORA POR CATEGORÍA */
+
+.home .categorias {
+    padding: 60px 7%;
+}
+
+.home .categorias h2 {
+    margin-bottom: 30px;
+    color: #81845a;
+    font-size: 30px;
+}
+
+.home .categorias-contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.home .categoria {
+    flex: auto;
+    width: calc(50% - 12px);
+    min-width: 0;
+    min-height: 480px;
+    padding: 35px;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: left;
+}
+
+/*  degradado */
+
+.home .categoria-ropa {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(10, 25, 35, 0.9),
+            rgba(10, 25, 35, 0)
+        ),
+        url("images/ropa.png");
+}
+
+.home .categoria-accesorios {
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(10, 25, 35, 0.9),
+            rgba(10, 25, 35, 0)
+        ),
+        url("images/accesorios.png");
+}
+
+.home .categoria-equipo {
+    width: 100%;
+    min-height: 500px;
+
+    background-image:
+        linear-gradient(
+            to top,
+            rgba(10, 25, 35, 0.9),
+            rgba(10, 25, 35, 0)
+        ),
+        url("images/equipo.png");
+}
+
+.home .categoria-texto {
+    max-width: 650px;
+}
+
+.home .categoria-texto span {
+    color: #c5dc35;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home .categoria-texto h3 {
+    margin: 15px 0;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.home .categoria-texto p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.home .categoria-texto strong {
+    display: inline-block;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #c5dc35;
+    font-size: 15px;
+}
+
+.home .categoria:hover .categoria-texto strong {
+    color: #c5dc35;
+}
+.home .categoria-equipo {
+    cursor: pointer;
+}
+/* CATEGORÍAS EN MÓVIL */
+
+@media screen and (max-width: 600px) {
+
+    .home .categorias-contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .home .categoria {
+        flex: auto;
+        width: calc(50% - 6px);
+        min-height: 360px;
+        padding: 18px 12px;
+    }
+
+    .home .categoria-equipo {
+        width: 100%;
+        min-height: 360px;
+    }
+
+    .home .categoria-texto span {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .home .categoria-texto h3 {
+        font-size: 23px;
+        overflow-wrap: break-word;
+    }
+
+    .home .categoria-texto p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .home .categoria-texto strong {
+        font-size: 11px;
+    }
+}
+
+/* PRODUCTOS DESTACADOS */
+
+.home .productos {
+    padding: 55px 7% 65px;
+    background-color: #f4ede4;
+}
+
+.home .productos-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.home .productos-titulo h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3d4934;
+}
+
+.home .productos-titulo a {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #81845a;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #3d4934;
+}
+
+.home .productos-titulo a:hover {
+    color: sienna;
+    border-color: sienna;
+}
+
+/* TRES PRODUCTOS JUNTOS */
+
+.home .productos-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.home .producto {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+
+    overflow: hidden;
+}
+
+.home .producto img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.home .producto img:hover {
+    transform: scale(1.05);
+}
+
+/* NOMBRE Y PRECIO */
+
+.home .producto p {
+    position: relative;
+    margin: 0;
+    padding-top: 14px;
+
+    background-color: #f4ede4;
+    color: #30382b;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.home .producto p:last-child {
+    padding-top: 6px;
+    padding-bottom: 5px;
+
+    color: #79503b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* MÓVIL */
+
+@media screen and (max-width: 600px) {
+
+    .home .productos {
+        padding: 40px 6%;
+    }
+
+    .home .productos-titulo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .home .productos-titulo h2 {
+        font-size: 25px;
+    }
+
+    .home .productos-contenedor {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .home .producto p {
+        padding-top: 10px;
+        font-size: 13px;
+    }
+
+    .home .producto p:last-child {
+        font-size: 12px;
+    }
+}
+
+/* INFORMACIÓN DE LA MARCA */
+
+.home .nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    padding: 90px 7%;
+    background-color: #f4ede4;
+}
+
+.home .nosotros-titulo {
+    width: 48%;
+}
+
+.home .nosotros-titulo span {
+    display: block;
+    margin-bottom: 22px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    color: sienna;
+}
+
+.home .nosotros-titulo h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond"bold;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.05;
+
+    color: #81845a;
+}
+
+.home .nosotros-texto {
+    width: 48%;
+}
+
+.home .nosotros-texto p {
+    max-width: none;
+    margin: 0 0 24px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: #403b34;
+}
+
+.home .nosotros-texto p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* SUSCRIPCIÓN */
+
+.home .suscripcion {
+    padding: 60px 7%;
+}
+
+.home .suscripcion h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.home .correo {
+    display: flex;
+    max-width: 500px;
+    border: 1px solid #999;
+}
+
+.home .correo input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 15px;
+    border: none;
+
+    font-family: inherit;
+}
+
+.home .correo button {
+    padding: 15px 25px;
+    border: none;
+
+    background-color: #81845a;
+    color: white;
+
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.home .pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 35px 7%;
+    background-color: #f4ede4;
+}
+
+.home .pie h2 {
+    font-size: 20px;
+    color: sienna;
+}
+
+.home .redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home .redes img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* EFECTOS DE LAS IMÁGENES */
+
+.home .producto img,
+.home .categoria img {
+    transition: transform 0.4s ease;
+}
+
+.home .producto img:hover,
+.home .categoria img:hover {
+    transform: scale(1.08);
+}
+
+/* NAVEGACIÓN MÓVIL Y TABLET */
+
+@media screen and (max-width: 1000px) {
+
+    .home .barra {
+        padding: 12px;
+    }
+
+    .home .secciones {
+        display: none;
+    }
+
+    .home .menu {
+        display: block;
+        width: 30%;
+    }
+
+    .home .menu > summary {
+        width: 44px;
+        height: 44px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .home .menu > summary img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
+
+    .home .opciones-movil {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        padding: 15px 25px;
+        background-color: #f4ede4;
+        border-top: 1px solid #ddd;
+    }
+
+    .home .opciones-movil > a,
+    .home .opciones-movil .tienda > summary {
+        display: block;
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    .home .opciones-movil .opciones-tienda {
+        position: static;
+        min-width: 0;
+        padding: 0 0 0 15px;
+        border: none;
+    }
+
+    .home .logo {
+        width: 40%;
+        height: 60px;
+    }
+
+    .home .iconos {
+        width: 30%;
+        gap: 0;
+    }
+
+    .home .iconos img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .home .portada {
+        min-height: 560px;
+        padding: 70px 6%;
+    }
+
+    .home .portada h1 {
+        font-size: 38px;
+        font-family: "DM SANS";
+    }
+
+    .home .texto-header {
+        font-size: 64px;
+    }
+}
+
+/* VERSIÓN TELÉFONO */
+
+@media screen and (max-width: 600px) {
+
+    .home .portada {
+        min-height: 480px;
+        padding: 60px 6%;
+        background-position: 60% center;
+    }
+
+    .home .portada h1 {
+        font-size: 30px;
+        font-family: "dm sans";
+        line-height: 1.1;
+    }
+
+    .home .texto-header {
+        max-width: 340px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .home .button {
+        padding: 12px 22px;
+        font-size: 18px;
+    }
+
+    .home .categorias,
+    .home .productos,
+    .home .nosotros,
+    .home .suscripcion {
+        padding: 40px 6%;
+    }
+
+    .home .categorias-contenedor,
+    .home .productos-contenedor {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home .categoria,
+    .home .producto {
+        flex: auto;
+        width: 100%;
+    }
+
+    .home .productos-titulo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .home .categorias h2,
+    .home .productos-titulo h2,
+    .home .suscripcion h2 {
+        font-size: 26px;
+    }
+
+    .home .nosotros h2 {
+        font-size: 36px;
+    }
+}
+.home .productos-contenedor {
+    flex-direction: row;
+    gap: 12px;
+}
+
+.home .producto {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+}
+
+.home .producto img {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .home .producto p {
+        font-size: 13px;
+    }
+}
+.home .portada h1 {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.home .texto-header {
+    margin-top: 0;
+    line-height: 1;
+}

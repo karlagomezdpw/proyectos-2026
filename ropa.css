@@ -1,0 +1,324 @@
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #202020;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.ropa-barra {
+  position: relative;
+  z-index: 10;
+
+  display: grid;
+  grid-template-columns: 1fr 180px 1fr;
+  align-items: center;
+
+  padding: 15px 5%;
+  background-color: #f4ede4;
+  color: #203247;
+}
+
+.ropa-menu-escritorio {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.ropa-menu-escritorio a,
+.ropa-tienda summary {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ropa-menu-escritorio a:hover,
+.ropa-tienda summary:hover {
+  color: sienna;
+}
+
+/* LOGO */
+.ropa-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.ropa-logo img {
+  display: block;
+  max-width: 200%;
+  max-height: 200%;
+}
+
+/* LUPA Y CARRITO */
+.ropa-iconos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.ropa-iconos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.ropa-iconos img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* DESPLEGABLE DE TIENDA */
+.ropa-tienda {
+  position: relative;
+}
+
+.ropa-tienda summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.ropa-tienda summary::-webkit-details-marker {
+  display: none;
+}
+
+.ropa-tienda-opciones {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 170px;
+  padding: 10px;
+  background-color: #f4ede4;
+  border: 1px solid #ddd;
+}
+
+.ropa-tienda-opciones a {
+  display: block;
+  padding: 12px 15px;
+}
+
+.ropa-tienda-opciones a:hover {
+  background-color: white;
+  color: sienna;
+}
+
+/* OCULTAR MENÚ MÓVIL EN ESCRITORIO */
+.ropa-menu-movil {
+  display: none;
+}
+
+/* IMAGEN ARRIBA Y CATEGORÍAS DEBAJO */
+.ropa-contenido {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+/* PORTADA */
+.ropa-portada {
+  min-height: 650px;
+  padding: 80px 6%;
+
+  /* Cambia aquí la fotografía */
+  background-image: url("images/ropa.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+.ropa-portada h1 {
+  margin-bottom: 15px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5vw;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.ropa-portada p {
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* BOTÓN */
+.ropa-boton {
+  display: inline-block;
+  padding: 17px 25px;
+  border-radius: 40px;
+  background-color: #eee7ef;
+  color: #793b35;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ropa-boton:hover {
+  background-color: white;
+}
+
+/* CATEGORÍAS CENTRADAS */
+.ropa-categorias {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 7% 80px;
+}
+
+.ropa-categorias ul {
+  width: 100%;
+  list-style: none;
+}
+
+.ropa-categorias a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  padding: 24px 0;
+  border-bottom: 1px solid #202020;
+  font-size: 16px;
+}
+
+.ropa-categorias a:hover {
+  color: sienna;
+}
+
+.ropa-categorias .ropa-ver-todo {
+  margin-top: 12px;
+  border-bottom: none;
+}
+
+/* EFECTO DE LAS FLECHAS */
+.ropa-flecha {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.ropa-categorias a:hover .ropa-flecha {
+  transform: scale(1.3);
+}
+
+/* MÓVIL Y TABLET */
+@media screen and (max-width: 1000px) {
+
+  .ropa-barra {
+    grid-template-columns: 1fr 120px 1fr;
+    padding: 12px;
+  }
+
+  .ropa-menu-escritorio {
+    display: none;
+  }
+
+  .ropa-menu-movil {
+    display: block;
+  }
+
+  .ropa-menu-movil > summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .ropa-menu-movil > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .ropa-menu-movil > summary img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+
+  .ropa-menu-desplegable {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #f4ede4;
+    border-top: 1px solid #ddd;
+  }
+
+  .ropa-menu-desplegable > a {
+    padding: 15px 0;
+  }
+
+  .ropa-menu-desplegable .ropa-tienda summary {
+    padding: 15px 0;
+  }
+
+  .ropa-menu-desplegable .ropa-tienda-opciones {
+    position: static;
+    min-width: 0;
+    padding: 0 0 0 15px;
+    border: none;
+  }
+
+  .ropa-logo {
+    height: 60px;
+  }
+
+  .ropa-iconos {
+    gap: 0;
+  }
+
+  .ropa-iconos img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ropa-portada {
+    min-height: 103vw;
+    padding: 13% 5%;
+  }
+
+  .ropa-portada h1 {
+    font-size: 14vw;
+  }
+
+  .ropa-portada p {
+    font-size: 20px;
+  }
+
+  .ropa-boton {
+    padding: 15px 22px;
+    font-size: 17px;
+  }
+
+  .ropa-categorias {
+    padding: 60px 13% 100px;
+  }
+}
+/* SUSCRIPCIÓN */
+

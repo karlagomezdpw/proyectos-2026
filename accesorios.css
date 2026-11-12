@@ -1,0 +1,374 @@
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #202020;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* BARRA SUPERIOR */
+.barra {
+  position: relative;
+  z-index: 10;
+
+  display: grid;
+  grid-template-columns: 1fr 180px 1fr;
+  align-items: center;
+
+  padding: 15px 5%;
+  background-color: #f4ede4;
+  color: #203247;
+}
+
+/* SECCIONES A LA IZQUIERDA */
+.menu-escritorio {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu-escritorio a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-escritorio a:hover {
+  color: sienna;
+}
+
+/* LOGO CENTRADO */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.logo img {
+  display: block;
+  max-width: 200%;
+  max-height: 200%;
+}
+
+/* ICONOS A LA DERECHA */
+.iconos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.iconos img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* MENÚ  EN COMPU */
+.menu-movil {
+  display: none;
+}
+
+/* FOTO*/
+.contenido {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+/* PORTADA */
+.portada {
+  min-height: 650px;
+  padding: 80px 6%;
+
+  background-image: url("images/accesorios.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+.portada h1 {
+  margin-bottom: 15px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5vw;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.portada p {
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* BOTÓN */
+.boton {
+  display: inline-block;
+  padding: 17px 25px;
+  border-radius: 40px;
+
+  background-color: #eee7ef;
+  color: #793b35;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background-color: white;
+}
+
+/* CATEGORÍAS */
+.categorias {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 7% 80px;
+}
+
+.categorias ul {
+  width: 100%;
+  list-style: none;
+}
+
+.categorias a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  padding: 24px 0;
+  border-bottom: 1px solid #202020;
+  font-size: 16px;
+}
+
+.categorias a:hover {
+  color: sienna;
+}
+
+.categorias .ver-todo {
+  margin-top: 12px;
+  border-bottom: none;
+}
+
+/* VERSIÓN CELULAR*/
+@media screen and (max-width: 1000px) {
+
+  .barra {
+    grid-template-columns: 1fr 120px 1fr;
+    padding: 12px;
+  }
+
+  .menu-escritorio {
+    display: none;
+  }
+
+  .menu-movil {
+    display: block;
+  }
+
+  .menu-movil summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .menu-movil summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .menu-movil summary img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+
+  .menu-desplegable {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #f4ede4;
+    border-top: 1px solid #ddd;
+  }
+
+  .menu-desplegable a {
+    padding: 15px 0;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .iconos {
+    gap: 0;
+  }
+
+  .iconos img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .contenido {
+    grid-template-columns: 100%;
+  }
+
+  .portada {
+    min-height: 103vw;
+    padding: 13% 5%;
+  }
+
+  .portada h1 {
+    font-size: 10vw;
+  }
+
+  .portada p {
+    font-size: 20px;
+  }
+
+  .boton {
+    padding: 15px 22px;
+    font-size: 17px;
+  }
+
+  .categorias {
+    padding: 60px 13% 100px;
+  }
+}
+/* MENÚ DESPLEGABLE DE TIENDA */
+.tienda-desplegable {
+  position: relative;
+}
+
+.tienda-desplegable summary {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+
+.tienda-desplegable summary::-webkit-details-marker {
+  display: none;
+}
+
+.tienda-desplegable summary:hover {
+  color: sienna;
+}
+
+.tienda-opciones {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 170px;
+  padding: 10px;
+  background-color: #f4ede4;
+  border: 1px solid #ddd;
+}
+
+.tienda-opciones a {
+  display: block;
+  padding: 12px 15px;
+}
+
+.tienda-opciones a:hover {
+  background-color: white;
+  color: sienna;
+}
+/* SUSCRIPCIÓN */
+
+.suscripcion {
+     background-color: #818156;
+    color: #ffffff;
+    padding: 60px 7%;
+}
+
+.suscripcion h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.correo {
+    display: flex;
+    max-width: 500px;
+    border: 1px solid #999;
+}
+
+.correo input {
+    padding: 15px;
+    border: none;
+    flex: 1;
+    min-width: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.correo button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #42481D;
+    color: white;
+    cursor: pointer;
+}
+/* FOOTER */
+
+footer {
+    background-color: #E5D8C6;
+    color: #42481D;
+    padding: 35px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 20px;
+     color: #42481D;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+}
