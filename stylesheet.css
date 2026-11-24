@@ -607,7 +607,7 @@
 
 .home .pie h2 {
     font-size: 20px;
-    color: sienna;
+    color: #42481D;
 }
 
 .home .redes {
@@ -757,18 +757,6 @@
         padding: 40px 6%;
     }
 
-    .home .categorias-contenedor,
-    .home .productos-contenedor {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .home .categoria,
-    .home .producto {
-        flex: auto;
-        width: 100%;
-    }
-
     .home .productos-titulo {
         flex-direction: column;
         align-items: flex-start;
@@ -781,9 +769,25 @@
         font-size: 26px;
     }
 
-    .home .nosotros h2 {
-        font-size: 36px;
-    }
+   .home .nosotros {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.home .nosotros-titulo,
+.home .nosotros-texto {
+    width: 100%;
+}
+
+.home .nosotros-titulo h2 {
+    font-size: 36px;
+}
+
+.home .nosotros-texto p {
+    font-size: 17px;
+    line-height: 1.6;
+} 
 }
 .home .productos-contenedor {
     flex-direction: row;

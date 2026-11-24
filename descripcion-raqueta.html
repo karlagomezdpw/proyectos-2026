@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Descripción de raqueta | Stratennis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="descripcion-raqueta.css">
+</head>
+
+<body class="pagina-detalle">
+
+    <!-- BARRA SUPERIOR -->
+
+    <header class="detalle-barra">
+
+        <nav class="detalle-secciones">
+            <a href="index.html#nosotros">Nosotros</a>
+
+            <details class="detalle-tienda">
+                <summary>Tienda</summary>
+
+                <div class="detalle-opciones">
+                    <a href="ropa.html">Ropa</a>
+                    <a href="accesorios.html">Accesorios</a>
+                    <a href="equipo.html">Equipo</a>
+                </div>
+            </details>
+        </nav>
+
+        <!-- MENÚ MÓVIL -->
+
+        <details class="detalle-menu">
+            <summary>
+                <img src="images/menu.png" alt="Abrir o cerrar menú">
+            </summary>
+
+            <nav class="detalle-menu-desplegable">
+                <a href="index.html#nosotros">Nosotros</a>
+
+                <details class="detalle-tienda">
+                    <summary>Tienda</summary>
+
+                    <div class="detalle-opciones">
+                        <a href="ropa.html">Ropa</a>
+                        <a href="accesorios.html">Accesorios</a>
+                        <a href="equipo.html">Equipo</a>
+                    </div>
+                </details>
+            </nav>
+        </details>
+
+        <!-- LOGO -->
+
+        <a class="detalle-logo" href="index.html">
+            <img
+                src="images/logo stratennis png.png"
+                alt="Stratennis, inicio"
+            >
+        </a>
+
+        <!-- ICONOS -->
+
+        <div class="detalle-iconos">
+            <a href="buscar.html">
+                <img src="images/lupa.png" alt="Buscar">
+            </a>
+
+            <a href="carrito.html">
+                <img src="images/CART.png" alt="Carrito de compras">
+            </a>
+        </div>
+
+    </header>
+
+    <main class="detalle-contenido">
+
+        <!-- RUTA DE NAVEGACIÓN -->
+
+        <nav class="detalle-ruta" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span aria-hidden="true">›</span>
+
+            <a href="equipo.html">Equipo</a>
+            <span aria-hidden="true">›</span>
+
+            <a href="raquetas.html">Raquetas</a>
+            <span aria-hidden="true">›</span>
+
+            <span aria-current="page">Yonex Ezone 98</span>
+        </nav>
+
+        <!-- PRODUCTO -->
+
+        <div class="detalle-producto">
+
+            <!-- FOTOGRAFÍA -->
+
+            <div class="detalle-foto">
+                <img
+                    src="images/yonex98.png"
+                    alt="Raqueta Yonex Ezone 98"
+                >
+            </div>
+
+            <!-- INFORMACIÓN -->
+
+            <section class="detalle-informacion">
+
+                <div class="detalle-encabezado">
+                    <div>
+                        <h1>Yonex Ezone 98</h1>
+                        <p class="detalle-precio">$3,999 MXN</p>
+                    </div>
+
+                    <label class="detalle-favorito">
+                        <input type="checkbox">
+
+                        <span aria-hidden="true">♥</span>
+
+                        <span class="detalle-texto-oculto">
+                            Guardar Yonex Ezone 98 en favoritos
+                        </span>
+                    </label>
+                </div>
+
+                <!-- VALORACIÓN DE EJEMPLO -->
+
+                <p
+                    class="detalle-estrellas"
+                    aria-label="Valoración de ejemplo: cinco de cinco estrellas"
+                >
+                    ★★★★★
+                </p>
+
+                <p class="detalle-resumen">
+                    Una raqueta versátil y precisa, ideal para
+                    jugadores que buscan control y estabilidad.
+                </p>
+
+                <!-- CANTIDAD Y BOTÓN -->
+
+                <div class="detalle-compra">
+                    <label for="cantidad">Cantidad</label>
+
+                    <input
+                        type="number"
+                        id="cantidad"
+                        name="cantidad"
+                        min="1"
+                        max="10"
+                        value="1"
+                    >
+
+                    <button class="detalle-boton" type="button">
+                        Agregar al carrito
+                    </button>
+                </div>
+
+                <!-- INFORMACIÓN DESPLEGABLE -->
+
+                <div class="detalle-acordeon">
+
+                    <details>
+                        <summary>
+                            Descripción
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="detalle-panel">
+                            <p>
+                                Lleva tu juego al siguiente nivel.
+                                Consulta las características del
+                                modelo y elige el equipo que mejor
+                                se adapte a tu estilo de juego.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Reseñas
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="detalle-panel">
+                            <p>
+                                Aún no hay reseñas publicadas
+                                para este producto.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Envíos y devoluciones
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="detalle-panel">
+                            <p>
+                                Los costos de envío, tiempos de
+                                entrega y condiciones de devolución
+                                se confirmarán antes de realizar
+                                una compra.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+
+                <a class="detalle-volver" href="raquetas.html">
+                    ← Volver a raquetas
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="detalle-footer">
+
+        <h2>STRATENNIS</h2>
+
+        <div class="detalle-redes">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/tiktok.svg.png" alt="TikTok">
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+/* ESTILOS GENERALES */
+
+.pagina-equipo,
+.pagina-equipo * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pagina-equipo {
+    font-family: "DM Sans", Arial, sans-serif;
+    background-color: white;
+    color: #202020;
+}
+
+.pagina-equipo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pagina-equipo img {
+    display: block;
+    max-width: 100%;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.equipo-barra {
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 5%;
+
+    background-color: #f4ede4;
+}
+
+/* SECCIONES EN ESCRITORIO */
+
+.equipo-secciones {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    width: 40%;
+}
+
+.equipo-secciones > a,
+.equipo-tienda > summary {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.equipo-secciones a:hover,
+.equipo-tienda summary:hover {
+    color: sienna;
+}
+
+/* LOGO CENTRADO */
+
+.equipo-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    height: 75px;
+}
+
+.equipo-logo img {
+    width: 180px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* BUSCADOR Y CARRITO */
+
+.equipo-iconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    width: 40%;
+}
+
+.equipo-iconos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+}
+
+.equipo-iconos img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* TIENDA DESPLEGABLE */
+
+.equipo-tienda {
+    position: relative;
+}
+
+.equipo-tienda summary,
+.equipo-menu > summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.equipo-tienda summary::-webkit-details-marker,
+.equipo-menu > summary::-webkit-details-marker {
+    display: none;
+}
+
+.equipo-opciones {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 170px;
+    padding: 10px;
+
+    background-color: #f4ede4;
+    border: 1px solid #ddd;
+}
+
+.equipo-opciones a {
+    padding: 12px 15px;
+}
+
+.equipo-opciones a:hover {
+    background-color: white;
+    color: sienna;
+}
+
+/* MENÚ MÓVIL OCULTO EN ESCRITORIO */
+
+.equipo-menu {
+    display: none;
+}
+
+/* PORTADA */
+
+.equipo-portada {
+    min-height: 650px;
+    padding: 80px 6%;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0)
+        ),
+        url("images/equipo.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.equipo-texto {
+    max-width: 600px;
+}
+
+.equipo-texto h1 {
+    margin-bottom: 12px;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.equipo-texto p {
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+/* BOTÓN */
+
+.equipo-boton {
+    display: inline-block;
+    padding: 17px 25px;
+
+    background-color: #eee7ef;
+    color: #793b35;
+    border-radius: 40px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: background-color 0.2s ease;
+}
+
+/* Mayor detalle que la regla general de enlaces */
+.pagina-equipo .equipo-boton {
+    color: #793b35;
+}
+
+.equipo-boton:hover {
+    background-color: white;
+}
+
+/* CATEGORÍAS DEBAJO DE LA IMAGEN */
+
+.equipo-categorias {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 7% 80px;
+}
+
+.equipo-categorias ul {
+    list-style: none;
+}
+
+.equipo-categorias a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    padding: 24px 0;
+    border-bottom: 1px solid #202020;
+
+    font-size: 16px;
+}
+
+.equipo-categorias a:hover {
+    color: sienna;
+}
+
+.equipo-categorias .equipo-ver-todo {
+    margin-top: 12px;
+    border-bottom: none;
+}
+
+/* EFECTO DE LAS FLECHAS */
+
+.equipo-flecha {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.equipo-categorias a:hover .equipo-flecha {
+    transform: scale(1.3);
+}
+
+/* MÓVIL Y TABLET */
+
+@media screen and (max-width: 900px) {
+
+    .equipo-barra {
+        min-height: 85px;
+        padding: 12px;
+    }
+
+    .equipo-secciones {
+        display: none;
+    }
+
+    .equipo-menu {
+        display: block;
+        width: 30%;
+    }
+
+    .equipo-menu > summary {
+        display: flex;
+        align-items: center;
+
+        width: 44px;
+        height: 44px;
+    }
+
+    .equipo-menu > summary img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
+
+    .equipo-menu-desplegable {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        padding: 15px 25px;
+
+        background-color: #f4ede4;
+        border-top: 1px solid #ddd;
+    }
+
+    .equipo-menu-desplegable > a,
+    .equipo-menu-desplegable .equipo-tienda > summary {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .equipo-menu-desplegable .equipo-opciones {
+        position: static;
+        min-width: 0;
+        padding: 0 0 0 15px;
+        border: none;
+    }
+
+    .equipo-logo {
+        width: 40%;
+        height: 60px;
+    }
+
+    .equipo-logo img {
+        width: 150px;
+    }
+
+    .equipo-iconos {
+        width: 30%;
+        gap: 0;
+    }
+
+    .equipo-iconos img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .equipo-portada {
+        min-height: 550px;
+        padding: 70px 6%;
+    }
+
+    .equipo-texto h1 {
+        font-size: 72px;
+    }
+}
+
+/* TELÉFONOS */
+
+@media screen and (max-width: 600px) {
+
+    .equipo-portada {
+        min-height: 103vw;
+        padding: 13% 6%;
+    }
+
+    .equipo-texto h1 {
+        font-size: 14vw;
+    }
+
+    .equipo-texto p {
+        font-size: 18px;
+    }
+
+    .equipo-boton {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .equipo-categorias {
+        padding: 45px 13% 80px;
+    }
+
+    .equipo-categorias a {
+        padding: 21px 0;
+        font-size: 14px;
+    }
+}
+/* SUSCRIPCIÓN */
+
+.suscripcion {
+     background-color: #818156;
+    color: #ffffff;
+    padding: 60px 7%;
+}
+
+.suscripcion h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.correo {
+    display: flex;
+    max-width: 500px;
+    border: 1px solid #999;
+}
+
+.correo input {
+    padding: 15px;
+    border: none;
+    flex: 1;
+    min-width: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.correo button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #42481D;
+    color: white;
+    cursor: pointer;
+}
+/* FOOTER */
+
+.pagina-equipo footer {
+    background-color: #E5D8C6;
+    color: #42481D;
+    padding: 35px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 20px;
+     color: #42481D;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+}

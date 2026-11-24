@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raquetas | Stratennis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="raquetas.css">
+</head>
+
+<body class="pagina-raquetas">
+
+    <!-- BARRA SUPERIOR -->
+
+    <header class="raquetas-barra">
+
+        <nav class="raquetas-secciones">
+            <a href="index.html#nosotros">Nosotros</a>
+
+            <details class="raquetas-tienda">
+                <summary>Tienda</summary>
+
+                <div class="raquetas-opciones">
+                    <a href="ropa.html">Ropa</a>
+                    <a href="accesorios.html">Accesorios</a>
+                    <a href="equipo.html">Equipo</a>
+                </div>
+            </details>
+        </nav>
+
+        <!-- MENÚ MÓVIL -->
+
+        <details class="raquetas-menu">
+            <summary>
+                <img src="images/menu.png" alt="Abrir o cerrar menú">
+            </summary>
+
+            <nav class="raquetas-menu-desplegable">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#nosotros">Nosotros</a>
+
+                <details class="raquetas-tienda">
+                    <summary>Tienda</summary>
+
+                    <div class="raquetas-opciones">
+                        <a href="ropa.html">Ropa</a>
+                        <a href="accesorios.html">Accesorios</a>
+                        <a href="equipo.html">Equipo</a>
+                    </div>
+                </details>
+            </nav>
+        </details>
+
+        <!-- LOGO -->
+
+        <a class="raquetas-logo" href="index.html">
+            <img
+                src="images/logo stratennis png.png"
+                alt="Stratennis, inicio"
+            >
+        </a>
+
+        <!-- ICONOS -->
+
+        <div class="raquetas-iconos">
+            <a href="buscar.html">
+                <img src="images/lupa.png" alt="Buscar">
+            </a>
+
+            <a href="carrito.html">
+                <img src="images/CART.png" alt="Carrito de compras">
+            </a>
+        </div>
+
+    </header>
+
+    <main class="raquetas-contenido">
+
+        <!-- TÍTULO Y RUTA -->
+
+        <h1>Raquetas</h1>
+
+        <nav class="raquetas-ruta" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span aria-hidden="true">›</span>
+
+            <a href="equipo.html">Equipo</a>
+            <span aria-hidden="true">›</span>
+
+            <span aria-current="page">Raquetas</span>
+        </nav>
+
+        <!-- FILTRAR Y ORDENAR -->
+
+        <div class="raquetas-herramientas">
+
+            <details class="raquetas-filtro">
+                <summary>Filtrar +</summary>
+
+                <div class="raquetas-filtro-panel">
+                    <p>Marca</p>
+
+                    <label>
+                        <input type="checkbox" name="marca" value="wilson">
+                        Wilson
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="marca" value="head">
+                        Head
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="marca" value="yonex">
+                        Yonex
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="marca" value="babolat">
+                        Babolat
+                    </label>
+                </div>
+            </details>
+
+            <div class="raquetas-orden">
+                <label for="orden-raquetas">Ordenar</label>
+
+                <select id="orden-raquetas" name="orden">
+                    <option value="destacados">Destacados</option>
+                    <option value="menor">Menor precio</option>
+                    <option value="mayor">Mayor precio</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- PRODUCTOS -->
+
+        <div class="raquetas-lista">
+
+            <!-- WILSON -->
+
+            <article class="raquetas-producto">
+
+                <div class="raquetas-foto">
+
+                    <a href="raqueta-wilson.html">
+                        <img
+                            src="images/wilson.png"
+                            alt="Raqueta Wilson"
+                        >
+                    </a>
+
+                    <label class="raquetas-favorito">
+                        <input type="checkbox">
+                        <span aria-hidden="true">♥</span>
+                        <span class="raquetas-texto-favorito">
+                            Guardar Wilson en favoritos
+                        </span>
+                    </label>
+
+                </div>
+
+                <a class="raquetas-nombre" href="raqueta-wilson.html">
+                    <h2>Wilson</h2>
+                </a>
+
+                <p>$4,999</p>
+
+            </article>
+
+            <!-- HEAD -->
+
+            <article class="raquetas-producto">
+
+                <div class="raquetas-foto">
+
+                    <a href="raqueta-head.html">
+                        <img
+                            src="images/raqueta head speed.png"
+                            alt="Raqueta Head Speed"
+                        >
+                    </a>
+
+                    <label class="raquetas-favorito">
+                        <input type="checkbox">
+                        <span aria-hidden="true">♥</span>
+                        <span class="raquetas-texto-favorito">
+                            Guardar Head Speed en favoritos
+                        </span>
+                    </label>
+
+                </div>
+
+                <a class="raquetas-nombre" href="raqueta-head.html">
+                    <h2>Head Speed</h2>
+                </a>
+
+                <p>$4,299</p>
+
+            </article>
+
+            <!-- YONEX -->
+
+            <article class="raquetas-producto">
+
+                <div class="raquetas-foto">
+
+                    <a href="descripcion-raqueta.html">
+                        <img
+                            src="images/yonex98.png"
+                            alt="Raqueta Yonex Ezone 98"
+                        >
+                    </a>
+
+                    <label class="raquetas-favorito">
+                        <input type="checkbox">
+                        <span aria-hidden="true">♥</span>
+                        <span class="raquetas-texto-favorito">
+                            Guardar Yonex Ezone 98 en favoritos
+                        </span>
+                    </label>
+
+                </div>
+
+                <a class="raquetas-nombre" href="descripcion-raqueta.html">
+                    <h2>Yonex Ezone 98</h2>
+                </a>
+
+                <p>$3,999</p>
+
+            </article>
+
+            <!-- BABOLAT -->
+
+            <article class="raquetas-producto">
+
+                <div class="raquetas-foto">
+
+                    <a href="raqueta-babolat.html">
+                        <img
+                            src="images/babolat.png"
+                            alt="Raqueta Babolat Pure"
+                        >
+                    </a>
+
+                    <label class="raquetas-favorito">
+                        <input type="checkbox">
+                        <span aria-hidden="true">♥</span>
+                        <span class="raquetas-texto-favorito">
+                            Guardar Babolat Pure en favoritos
+                        </span>
+                    </label>
+
+                </div>
+
+                <a class="raquetas-nombre" href="raqueta-babolat.html">
+                    <h2>Babolat Pure</h2>
+                </a>
+
+                <p>$4,199</p>
+
+            </article>
+            <!-- WILSON CLASH -->
+
+<article class="raquetas-producto">
+
+    <div class="raquetas-foto">
+
+        <a href="raqueta-wilson-.html">
+            <img
+                src="images/wilson clash.png"
+                alt="Raqueta Wilson Clash 100"
+            >
+        </a>
+
+        <label class="raquetas-favorito">
+            <input type="checkbox">
+            <span aria-hidden="true">♥</span>
+            <span class="raquetas-texto-favorito">
+                Guardar Wilson Clash 100 en favoritos
+            </span>
+        </label>
+
+    </div>
+
+    <a class="raquetas-nombre" href="raqueta-wilson-clash.html">
+        <h2>Wilson Clash 100</h2>
+    </a>
+
+    <p>$4,599</p>
+
+</article>
+
+<!-- HEAD BOOM -->
+
+<article class="raquetas-producto">
+
+    <div class="raquetas-foto">
+
+        <a href="raqueta-head-boom.html">
+            <img
+                src="images/head boom.png"
+                alt="Raqueta Head Boom MP"
+            >
+        </a>
+
+        <label class="raquetas-favorito">
+            <input type="checkbox">
+            <span aria-hidden="true">♥</span>
+            <span class="raquetas-texto-favorito">
+                Guardar Head Boom MP en favoritos
+            </span>
+        </label>
+
+    </div>
+
+    <a class="raquetas-nombre" href="raqueta-head-boom.html">
+        <h2>Head Boom MP</h2>
+    </a>
+
+    <p>$4,399</p>
+
+</article>
+
+<!-- YONEX VCORE -->
+
+<article class="raquetas-producto">
+
+    <div class="raquetas-foto">
+
+        <a href="raqueta-yonex-vcore.html">
+            <img
+                src="images/yonex.png"
+                alt="Raqueta Yonex Vcore 100"
+            >
+        </a>
+
+        <label class="raquetas-favorito">
+            <input type="checkbox">
+            <span aria-hidden="true">♥</span>
+            <span class="raquetas-texto-favorito">
+                Guardar Yonex Vcore 100 en favoritos
+            </span>
+        </label>
+
+    </div>
+
+    <a class="raquetas-nombre" href="raqueta-yonex-vcore.html">
+        <h2>Yonex Vcore 100</h2>
+    </a>
+
+    <p>$4,799</p>
+
+</article>
+
+<!-- BABOLAT PURE AERO -->
+
+<article class="raquetas-producto">
+
+    <div class="raquetas-foto">
+
+        <a href="raqueta-babolat-aero.html">
+            <img
+                src="images/pure aero.png"
+                alt="Raqueta Babolat Pure Aero"
+            >
+        </a>
+
+        <label class="raquetas-favorito">
+            <input type="checkbox">
+            <span aria-hidden="true">♥</span>
+            <span class="raquetas-texto-favorito">
+                Guardar Babolat Pure Aero en favoritos
+            </span>
+        </label>
+
+    </div>
+
+    <a class="raquetas-nombre" href="raqueta-babolat-aero.html">
+        <h2>Babolat Pure Aero</h2>
+    </a>
+
+    <p>$4,899</p>
+
+</article>
+
+<main>
+
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+
+<footer class="raquetas-footer">
+
+    <h2>STRATENNIS</h2>
+
+    <div class="raquetas-redes">
+        <img src="images/instagram.png" alt="Instagram">
+        <img src="images/tiktok.svg.png" alt="TikTok">
+    </div>
+
+</footer>
+
+</body>
+</html>

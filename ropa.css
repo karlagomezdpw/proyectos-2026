@@ -322,3 +322,65 @@ a {
 }
 /* SUSCRIPCIÓN */
 
+.suscripcion {
+     background-color: #818156;
+    color: #ffffff;
+    padding: 60px 7%;
+}
+
+.suscripcion h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.correo {
+    display: flex;
+    max-width: 500px;
+    border: 1px solid #999;
+}
+
+.correo input {
+    padding: 15px;
+    border: none;
+    flex: 1;
+    min-width: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.correo button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #42481D;
+    color: white;
+    cursor: pointer;
+}
+/* FOOTER */
+
+footer {
+    background-color: #E5D8C6;
+    color: #42481D;
+    padding: 35px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 20px;
+     color: #42481D;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
